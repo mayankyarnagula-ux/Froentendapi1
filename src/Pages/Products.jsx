@@ -8,7 +8,7 @@ function Products() {
   useEffect(() => {
     async function getProducts() {
       try {
-        const response = await fetch("http://localhost:3000");
+        const response = await fetch("https://api-wsd3.onrender.com");
         const data = await response.json();
         setItems(data);
       } catch (error) {

@@ -1,3 +1,5 @@
+import React from "react";
+
 function MainPage() {
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
