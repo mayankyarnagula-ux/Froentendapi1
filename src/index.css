@@ -1,0 +1,186 @@
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #0f172a;
+  color: #f8fafc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.16);
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #e2e8f0;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(226, 232, 240, 0.12);
+  color: #ffffff;
+}
+
+.page-content {
+  min-height: calc(100vh - 152px);
+  padding: 2rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.footer-link {
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #f8fafc;
+}
+
+.products-page {
+  padding: 1.5rem 1rem 2rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section-subtitle {
+  max-width: 720px;
+  color: #475569;
+  margin-top: 0.5rem;
+}
+
+.product-grid,
+.service-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.product-card,
+.service-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+.product-description,
+.service-description {
+  color: #475569;
+  line-height: 1.7;
+  margin: 0.75rem 0;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.product-price {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.product-button {
+  border: none;
+  background: #0f172a;
+  color: #f8fafc;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.product-button:hover {
+  background: #1e293b;
+  transform: translateY(-1px);
+}
+
+.products-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.search-bar {
+  width: min(100%, 320px);
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 0.9rem 1rem;
+  background: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #0f172a;
+  box-shadow: 0 0 0 4px rgba(15, 23, 42, 0.08);
+}
+
+.service-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
