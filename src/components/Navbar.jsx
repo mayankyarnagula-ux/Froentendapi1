@@ -13,10 +13,6 @@ function Navbar() {
         <Link to="/home" className="nav-link">
           Home
         </Link>
-
-        <Link to="/products" className="nav-link">
-          Products
-        </Link>
       </div>
     </nav>
   );

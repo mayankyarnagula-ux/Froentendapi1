@@ -184,3 +184,142 @@ a {
   font-size: 1.1rem;
   font-weight: 700;
 }
+
+.main-page {
+  min-height: calc(100vh - 152px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+.hero-section {
+  display: grid;
+  gap: 1.5rem;
+  width: min(100%, 520px);
+  text-align: center;
+}
+
+.hero-copy {
+  max-width: 100%;
+}
+
+.auth-toggle {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.toggle-button,
+.primary-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.toggle-button {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.toggle-button.active,
+.primary-button {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.toggle-button:hover,
+.primary-button:hover {
+  transform: translateY(-1px);
+}
+
+.auth-card {
+  max-width: 440px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.auth-card form {
+  display: grid;
+  gap: 1rem;
+}
+
+.auth-card h2 {
+  margin: 0 0 0.75rem;
+}
+
+.auth-input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  background: #f8fafc;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #0f172a;
+  box-shadow: 0 0 0 4px rgba(15, 23, 42, 0.08);
+}
+
+.auth-card label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.auth-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.auth-message.success {
+  background: #ecfdf5;
+  color: #0f5132;
+  border: 1px solid #bbf7d0;
+}
+
+.auth-message.error {
+  background: #fef2f2;
+  color: #9f1239;
+  border: 1px solid #fecaca;
+}
+
+.auth-success {
+  display: grid;
+  gap: 1rem;
+}
+
+.password-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.show-password {
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.show-password:hover {
+  background: #f1f5f9;
+}
+
+.info-section,
+.products-section {
+  margin-top: 2rem;
+}
